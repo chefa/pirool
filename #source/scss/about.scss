@@ -1,0 +1,113 @@
+
+.title-wrap {
+    background-color: #3e3e3e;
+}
+
+.section {
+
+    &__header {
+        margin-top: 89px;
+        
+        padding: 6% 36.5%;
+        
+    }
+
+    &__title {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 48px;
+    }
+
+    &__subtitle {
+    color: #ffffff;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.09px;
+    }
+
+}
+.about-me {
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__item-img {
+        width: 50%;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__item-content {
+        padding: 0 19% 0 6%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title {
+        color: #171717;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 84px;
+        letter-spacing: 0.3px;
+    }
+
+    &__text {
+    color: #787878;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    & p {
+        padding-top: 30px;
+    }
+    }
+
+    &__sigh {
+    }
+}
+.section-need {
+
+    &__header {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        text-align: center;
+        padding: 0 35%;
+    }
+
+    &__title {
+        color: #1d1d1d;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 84px;
+        letter-spacing: 0.3px;
+    }
+
+    &__subtitle {
+        color: #787878;
+        font-family: "Nunito Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        /* Text style for "Let us kno" */
+        letter-spacing: 0.08px;
+    }
+    &__btn {
+        padding: 20px 45px;
+        background-color: #10c9c3;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 84px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+}

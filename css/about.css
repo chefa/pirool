@@ -1,0 +1,90 @@
+.title-wrap {
+  background-color: #3e3e3e;
+}
+
+.section__header {
+  margin-top: 89px;
+  padding: 6% 36.5%;
+}
+.section__title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.section__subtitle {
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.09px;
+}
+
+.about-me__wrap {
+  display: flex;
+}
+.about-me__item-img {
+  width: 50%;
+}
+.about-me__item-img img {
+  width: 100%;
+}
+.about-me__item-content {
+  padding: 0 19% 0 6%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me__title {
+  color: #171717;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: 0.3px;
+}
+.about-me__text {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+.about-me__text p {
+  padding-top: 30px;
+}
+.section-need__header {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  text-align: center;
+  padding: 0 35%;
+}
+.section-need__title {
+  color: #1d1d1d;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: 0.3px;
+}
+.section-need__subtitle {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for "Let us kno" */
+  letter-spacing: 0.08px;
+}
+.section-need__btn {
+  padding: 20px 45px;
+  background-color: #10c9c3;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 84px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
