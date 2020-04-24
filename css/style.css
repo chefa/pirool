@@ -26,7 +26,7 @@ a {
 }
 
 .intro {
-  background: url(../../img/intro/image_here.jpg) center no-repeat;
+  background: url(../img/intro/image_here.jpg) center no-repeat;
   position: relative;
   background-size: cover;
   height: 100vh;
