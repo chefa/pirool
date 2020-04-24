@@ -1,0 +1,66 @@
+footer {
+    background-color: #141414;
+}
+.footer {
+    padding: 6% 0;
+    display: flex;
+    color: #bcbcbc;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+
+        & a {
+        color: #bcbcbc;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        }
+		&__copyright {
+            width: 50%;
+		}
+
+		&__title-copyright {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+		}
+
+		&__text-copyright {
+            padding-right: 50%;
+		}
+
+		&__contacts {
+            width: 30%;
+		}
+
+		&__email {
+		}
+
+		&__phone {
+		}
+
+		&__nav {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            
+		}
+
+		&__nav-item {
+            width: 50%;
+            display:flex;
+            flex-direction: column;
+		}
+
+		&__social {
+            margin-left: 10%;
+            align-items: flex-start;
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+		}
+}

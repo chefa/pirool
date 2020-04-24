@@ -1,0 +1,531 @@
+@charset "UTF-8";
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+body {
+	color: #000;
+	font-size: 14px;
+	font-family: 'Montserrat';
+}
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+.intro {
+    background: url(../../img/intro/image_here.jpg) center no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	
+	&__wrap {
+		width: 50%;
+		padding: 0 27% 0 0;
+	}
+    &__title {
+        color: #1d1d1d;
+        font-size: 38px;
+        font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 5%;
+        /* Text style for "W, e Desig" */
+		
+    }
+    &__text {
+		padding-left: 1%;
+		margin-bottom: 5%;
+		color: #787878;
+		font-family: "Nunito Sans";
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		letter-spacing: 0.09px;
+    }
+    &__btn {
+		padding-left: 1%;
+		& a {
+			padding: 20px 45px;
+			background-color: #10c9c3;
+			color: #ffffff;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 84px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+	}
+	
+}
+.about {
+
+padding: 7% 0 0 0;
+	&__sign {
+	margin-top: 4%;
+	text-align: center;	
+	
+	}
+
+	&__skills {
+		margin-top: 11%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+
+	&__item-content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 5%;
+		
+	}
+
+	&__title {
+	color: #171717;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 84px;
+	letter-spacing: 0.3px;
+	}
+
+	&__hr {
+		margin: 10px 0;
+	position: relative;
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: #d8d8d8;
+			
+		}
+	}
+	&__hr-75 {
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: "";
+			display: block;
+			width: 75%;
+			height: 3px;
+			background-color: #10c9c3;
+		}
+	}
+	&__hr-90 {
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: "";
+			display: block;
+			width: 90%;
+			height: 3px;
+			background-color: #10c9c3;
+		}
+	}
+	&__hr-65 {
+		
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: "";
+			display: block;
+			width: 65%;
+			height: 3px;
+			background-color: #10c9c3;
+		}
+		
+	}
+
+	&__title-skills {
+	color: #000000;
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	letter-spacing: 1.2px;
+		& span {
+			padding-left: 20px;
+		}
+	}
+	&__item-img {
+		width: 50%;
+	}
+	&__img img {
+		width: 100%;
+		height: 100%;
+		
+	}
+}
+.section {
+	&__header {
+		text-align: center;
+		padding: 0 23%;
+		
+	}
+
+	&__title {
+		color: #191919;
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 60px;
+		letter-spacing: 0.3px;
+		margin-bottom: 2%;
+	}
+
+	&__subtitle {
+		color: #787878;
+		font-family: "Nunito Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.08px;
+	}
+}
+
+.section {
+	&__stat {
+		background-color: #10c9c3;
+		padding: 4% 0;
+	}
+}
+.stat {
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+
+	&__item {
+	}
+
+	&__content {
+		position: relative;
+		padding-left: 70px;
+	}
+
+	&__count {
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 0.54px;
+	}
+
+	&__title {
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+			}
+
+	&__icon {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.works {
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 25%;
+		position: relative;
+		font-size: 0;
+		background-color: #141414;
+		&:hover .works__icon {
+			opacity: 1;
+		}
+		&:hover .works__img {
+			opacity: 0.2;
+		}
+	}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+	}
+	& img {
+		object-fit: cover;
+		width: 100%; /* Ширина изображений */
+		height: 100%; /* Высота изображении */
+	}
+	&__img {
+		background-color: #141414;
+		height: 100%;
+		
+	}
+	&__btn-load {
+		margin-top: 2%;
+		text-align: center;
+		& a {
+			color: #8e8e8e;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+		}
+	}
+}
+.work-process {
+	margin-top: 6%;
+}
+
+.work-process-wrap {
+	margin-top: 3%;
+	background: url(../../img/works/video_here.png) center no-repeat;
+	background-size: cover;
+	padding: 30% 0;
+	position: relative;
+		&__icon {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			z-index: 3;
+			transform: translate(-50%, -50%);
+			
+		}
+		& img {
+			object-fit: contain;
+		}
+}
+
+.section {
+
+	&__slider {
+	background-color: #10c9c3;
+	
+	}
+}
+.slider {
+	padding: 4% 4%;
+	&__item {
+		text-align: center;
+		padding: 0 4%;
+		outline: none;
+	}
+
+	&__text {
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 36px;
+	}
+
+	&__author {
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 36px;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+	}
+}
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+.slick-dots li{
+	display: flex;
+	list-style: none;
+	transition: transform linear 0.2s;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+	transform: scale(1.5);
+	
+}
+
+/* Элемент точки */
+.slick-dots button{
+	opacity: 0.5;
+	margin: 0 10px;
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #b0e8e6;
+	border-radius: 50%;
+	outline: none;
+}
+.slick-dots li.slick-active button{
+	opacity: 1;
+}
+
+.badges {
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		padding: 10% 5%;
+	}
+
+	&__item {
+	}
+}
+
+.form {
+	
+}
+.form-need {
+	max-width: 670px;
+	margin: 70px auto;
+	background-color: #f5f5f5;
+	width: 100%;
+	&__inputs-contacts {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__name {
+		width: 45%;
+	}
+
+	&__email {
+		width: 45%;
+	}
+
+	&__title {
+		width: 100%;
+	}
+
+	&__comment {
+		width: 100%;
+		padding: 0 0 20% 20px;
+	}
+
+	& input {
+		padding: 7px 0;
+		margin-bottom: 20px;
+	}
+
+	& input, textarea {
+	color: #787878;
+	font-family: "Nunito Sans";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	background-color: #ffffff;
+	resize: none;
+	}
+	&__button-wrap {
+		text-align: center;
+	}
+	&__button {
+		padding: 20px 30px;
+		background-color: #10c9c3;
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		transition: background linear 0.2s;
+		&:hover {
+			background-color: #0fe4dd;
+		}
+	}
+}
+
+
+
