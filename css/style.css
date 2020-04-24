@@ -357,11 +357,12 @@ a {
   opacity: 0.5;
   margin: 0 10px;
   font-size: 0;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background-color: #b0e8e6;
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 }
 
 .slick-dots li.slick-active button {
